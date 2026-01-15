@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Marketing Template
 
-## Getting Started
+A production-ready, reusable marketing website template built with Next.js 16, React 19, and Tailwind CSS 4.
 
-First, run the development server:
+## Features
+
+- ⚡ **Next.js 16** with React 19 and React Compiler
+- 🌐 **Internationalization** - Built-in i18n with next-intl (EN/AR, RTL support)
+- 🎨 **Tailwind CSS 4** with OKLCH color tokens
+- 📦 **Feature-based architecture** - Bulletproof React patterns
+- 🔒 **Type-safe** - Full TypeScript with Zod validation
+- 🧪 **Testing ready** - Vitest + Storybook + Playwright
+- 📊 **Analytics** - GA4 & Meta Pixel (opt-in)
+- 🔍 **SEO optimized** - Metadata, JSON-LD, sitemap, robots.txt
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the template
+git clone <your-repo-url> my-site
+cd my-site
+
+# Install dependencies
+pnpm install
+
+# Start development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js App Router
+│   └── [locale]/           # i18n routes
+│       ├── (marketing)/    # Marketing pages
+│       └── (legal)/        # Legal pages
+├── features/               # Feature modules
+│   ├── analytics/          # GA4, Meta Pixel
+│   ├── contact/            # Contact form
+│   ├── marketing/          # Sections (Hero, Features, CTA)
+│   └── seo/                # Metadata, JSON-LD
+├── components/             # Shared components
+├── config/                 # Site, SEO, feature flags
+├── hooks/                  # Shared hooks
+├── lib/                    # Utilities
+├── messages/               # i18n translations (en, ar)
+└── styles/                 # CSS
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Script | Description |
+|--------|-------------|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Build for production |
+| `pnpm start` | Start production server |
+| `pnpm lint` | Run ESLint |
+| `pnpm type-check` | TypeScript type checking |
+| `pnpm test` | Run unit tests |
+| `pnpm storybook` | Start Storybook |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Site Settings (`src/config/site.ts`)
+```typescript
+export const siteConfig = {
+  name: "Your Site Name",
+  description: "Your site description",
+  url: "https://yoursite.com",
+  // ...
+}
+```
 
-## Deploy on Vercel
+### Feature Flags (`src/config/features.ts`)
+All features are opt-in and disabled by default:
+- `analytics` - GA4 & Meta Pixel
+- `contactForm` - Contact form
+- `newsletter` - Newsletter signup
+- `animations` - Micro-animations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Enable via environment variables:
+```env
+NEXT_PUBLIC_ENABLE_ANALYTICS=true
+NEXT_PUBLIC_GA_ID=G-XXXXXXX
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Documentation
+
+- [Getting Started](docs/getting-started.md)
+- [Customization Guide](docs/customization.md)
+- [Template Optimization Guide](docs/template-optimization-guide.md)
+- [AI Agent Rules](docs/AGENT_RULES.md)
+
+## Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | Next.js 16.1.1 |
+| React | React 19.2.3 |
+| Styling | Tailwind CSS 4 |
+| i18n | next-intl 4.7 |
+| Validation | Zod 4.3 |
+| Testing | Vitest, Storybook 10, Playwright |
+
+## License
+
+MIT

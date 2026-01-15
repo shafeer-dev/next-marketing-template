@@ -1,0 +1,65 @@
+{
+    "hero": {
+        "headline": "Build Something Amazing",
+        "subheadline": "We help businesses create stunning digital experiences that drive growth and engage customers.",
+        "primaryCta": "Get Started",
+        "secondaryCta": "Learn More"
+    },
+    "features": {
+        "title": "Everything You Need",
+        "subtitle": "Powerful features to help you build, launch, and grow your online presence.",
+        "items": {
+            "0": {
+                "title": "Lightning Fast",
+                "description": "Optimized performance ensures your site loads in milliseconds, keeping visitors engaged."
+            },
+            "1": {
+                "title": "Secure by Default",
+                "description": "Enterprise-grade security protects your data and your customers' information."
+            },
+            "2": {
+                "title": "Modern Design",
+                "description": "Beautiful, responsive designs that look great on every device and screen size."
+            },
+            "3": {
+                "title": "Global Reach",
+                "description": "Multi-language support helps you connect with customers around the world."
+            },
+            "4": {
+                "title": "Quick Launch",
+                "description": "Go from concept to live site in days, not months, with our streamlined process."
+            },
+            "5": {
+                "title": "Dedicated Support",
+                "description": "Our team is here to help you succeed with personalized support and guidance."
+            }
+        }
+    },
+    "stats": {
+        "projects": "Projects Completed",
+        "satisfaction": "Client Satisfaction",
+        "support": "Support Available",
+        "countries": "Countries Served"
+    },
+    "testimonials": {
+        "title": "What Our Clients Say",
+        "subtitle": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+        "items": {
+            "0": {
+                "quote": "Working with this team transformed our online presence. Our conversion rates increased by 150% within the first quarter."
+            },
+            "1": {
+                "quote": "The attention to detail and commitment to quality exceeded our expectations. Highly recommended!"
+            },
+            "2": {
+                "quote": "Professional, responsive, and incredibly talented. They delivered exactly what we needed, on time and on budget."
+            }
+        }
+    },
+    "cta": {
+        "headline": "Ready to Get Started?",
+        "description": "Let's discuss how we can help you achieve your goals.",
+        "primaryButton": "Contact Us",
+        "secondaryButton": "View Pricing"
+    }
+}
